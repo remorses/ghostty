@@ -2,7 +2,7 @@ on:
   workflow_run:
     workflows: [Test]
     types: [completed]
-    branches: [main]
+    branches: [termcast]
 
   workflow_dispatch: {}
 
@@ -21,7 +21,7 @@ jobs:
       (
         github.event.workflow_run.conclusion == 'success' &&
         github.repository_owner == 'remorses' &&
-        github.ref_name == 'main'
+        github.ref_name == 'termcast'
       )
     runs-on: namespace-profile-ghostty-sm
     outputs:
@@ -153,7 +153,7 @@ jobs:
         (
           github.event.workflow_run.conclusion == 'success' &&
           github.repository_owner == 'remorses' &&
-          github.ref_name == 'main'
+          github.ref_name == 'termcast'
         )
       )
     runs-on: namespace-profile-ghostty-md
@@ -208,7 +208,7 @@ jobs:
         (
           github.event.workflow_run.conclusion == 'success' &&
           github.repository_owner == 'remorses' &&
-          github.ref_name == 'main'
+          github.ref_name == 'termcast'
         )
       )
 
@@ -375,7 +375,7 @@ jobs:
         if: |
           github.event.workflow_run.conclusion == 'success' &&
           github.repository_owner == 'remorses' &&
-          github.ref_name == 'main'
+          github.ref_name == 'termcast'
         env:
           SPARKLE_KEY: ${{ secrets.PROD_MACOS_SPARKLE_KEY }}
         run: |
@@ -410,7 +410,7 @@ jobs:
         if: |
           github.event.workflow_run.conclusion == 'success' &&
           github.repository_owner == 'remorses' &&
-          github.ref_name == 'main'
+          github.ref_name == 'termcast'
         run: |
           rm -r blob
           mkdir blob
@@ -420,7 +420,7 @@ jobs:
         if: |
           github.event.workflow_run.conclusion == 'success' &&
           github.repository_owner == 'remorses' &&
-          github.ref_name == 'main'
+          github.ref_name == 'termcast'
         uses: ryand56/r2-upload-action@b801a390acbdeb034c5e684ff5e1361c06639e7c # v1.4
         with:
           r2-account-id: ${{ secrets.CF_R2_TIP_ACCOUNT_ID }}
@@ -446,7 +446,7 @@ jobs:
         (
           github.event.workflow_run.conclusion == 'success' &&
           github.repository_owner == 'remorses' &&
-          github.ref_name == 'main'
+          github.ref_name == 'termcast'
         )
       )
 
@@ -631,7 +631,7 @@ jobs:
         (
           github.event.workflow_run.conclusion == 'success' &&
           github.repository_owner == 'remorses' &&
-          github.ref_name == 'main'
+          github.ref_name == 'termcast'
         )
       )
 
