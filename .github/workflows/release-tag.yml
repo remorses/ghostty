@@ -95,7 +95,7 @@ jobs:
 
       - uses: cachix/cachix-action@0fc020193b5a1fa3ac4575aa3a7d3aa6a35435ad # v16
         with:
-          name: ghostty
+          name: remorses-ghostty
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
 
       - name: Create Tarball
@@ -135,7 +135,7 @@ jobs:
           determinate: true
       - uses: cachix/cachix-action@0fc020193b5a1fa3ac4575aa3a7d3aa6a35435ad # v16
         with:
-          name: ghostty
+          name: remorses-ghostty
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
 
       - name: XCode Select

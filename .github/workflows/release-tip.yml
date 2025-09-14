@@ -20,7 +20,7 @@ jobs:
       github.event_name == 'workflow_dispatch' ||
       (
         github.event.workflow_run.conclusion == 'success' &&
-        github.repository_owner == 'ghostty-org' &&
+        github.repository_owner == 'remorses' &&
         github.ref_name == 'main'
       )
     runs-on: namespace-profile-ghostty-sm
@@ -39,7 +39,7 @@ jobs:
           nix_path: nixpkgs=channel:nixos-unstable
       - uses: cachix/cachix-action@0fc020193b5a1fa3ac4575aa3a7d3aa6a35435ad # v16
         with:
-          name: ghostty
+          name: remorses-ghostty
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
       - name: Extract build info
         id: extract_build_info
@@ -152,7 +152,7 @@ jobs:
         github.event_name == 'workflow_dispatch' ||
         (
           github.event.workflow_run.conclusion == 'success' &&
-          github.repository_owner == 'ghostty-org' &&
+          github.repository_owner == 'remorses' &&
           github.ref_name == 'main'
         )
       )
@@ -173,7 +173,7 @@ jobs:
           nix_path: nixpkgs=channel:nixos-unstable
       - uses: cachix/cachix-action@0fc020193b5a1fa3ac4575aa3a7d3aa6a35435ad # v16
         with:
-          name: ghostty
+          name: remorses-ghostty
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
       - name: Create Tarball
         run: |
@@ -207,7 +207,7 @@ jobs:
         github.event_name == 'workflow_dispatch' ||
         (
           github.event.workflow_run.conclusion == 'success' &&
-          github.repository_owner == 'ghostty-org' &&
+          github.repository_owner == 'remorses' &&
           github.ref_name == 'main'
         )
       )
@@ -231,7 +231,7 @@ jobs:
           determinate: true
       - uses: cachix/cachix-action@0fc020193b5a1fa3ac4575aa3a7d3aa6a35435ad # v16
         with:
-          name: ghostty
+          name: remorses-ghostty
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
 
       - name: XCode Select
@@ -374,7 +374,7 @@ jobs:
       - name: Generate Appcast
         if: |
           github.event.workflow_run.conclusion == 'success' &&
-          github.repository_owner == 'ghostty-org' &&
+          github.repository_owner == 'remorses' &&
           github.ref_name == 'main'
         env:
           SPARKLE_KEY: ${{ secrets.PROD_MACOS_SPARKLE_KEY }}
@@ -409,7 +409,7 @@ jobs:
       - name: Prep R2 Storage for Appcast
         if: |
           github.event.workflow_run.conclusion == 'success' &&
-          github.repository_owner == 'ghostty-org' &&
+          github.repository_owner == 'remorses' &&
           github.ref_name == 'main'
         run: |
           rm -r blob
@@ -419,7 +419,7 @@ jobs:
       - name: Upload Appcast to R2
         if: |
           github.event.workflow_run.conclusion == 'success' &&
-          github.repository_owner == 'ghostty-org' &&
+          github.repository_owner == 'remorses' &&
           github.ref_name == 'main'
         uses: ryand56/r2-upload-action@b801a390acbdeb034c5e684ff5e1361c06639e7c # v1.4
         with:
@@ -445,7 +445,7 @@ jobs:
         github.event_name == 'workflow_dispatch' ||
         (
           github.event.workflow_run.conclusion == 'success' &&
-          github.repository_owner == 'ghostty-org' &&
+          github.repository_owner == 'remorses' &&
           github.ref_name == 'main'
         )
       )
@@ -469,7 +469,7 @@ jobs:
           determinate: true
       - uses: cachix/cachix-action@0fc020193b5a1fa3ac4575aa3a7d3aa6a35435ad # v16
         with:
-          name: ghostty
+          name: remorses-ghostty
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
 
       - name: XCode Select
@@ -630,7 +630,7 @@ jobs:
         github.event_name == 'workflow_dispatch' ||
         (
           github.event.workflow_run.conclusion == 'success' &&
-          github.repository_owner == 'ghostty-org' &&
+          github.repository_owner == 'remorses' &&
           github.ref_name == 'main'
         )
       )
@@ -654,7 +654,7 @@ jobs:
           determinate: true
       - uses: cachix/cachix-action@0fc020193b5a1fa3ac4575aa3a7d3aa6a35435ad # v16
         with:
-          name: ghostty
+          name: remorses-ghostty
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
 
       - name: XCode Select

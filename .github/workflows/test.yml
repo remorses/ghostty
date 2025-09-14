@@ -80,7 +80,7 @@ jobs:
           nix_path: nixpkgs=channel:nixos-unstable
       - uses: cachix/cachix-action@0fc020193b5a1fa3ac4575aa3a7d3aa6a35435ad # v16
         with:
-          name: ghostty
+          name: remorses-ghostty
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
 
       - name: Build Benchmarks
@@ -111,7 +111,7 @@ jobs:
           nix_path: nixpkgs=channel:nixos-unstable
       - uses: cachix/cachix-action@0fc020193b5a1fa3ac4575aa3a7d3aa6a35435ad # v16
         with:
-          name: ghostty
+          name: remorses-ghostty
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
 
       - name: Build with Flatpak
@@ -147,7 +147,7 @@ jobs:
           nix_path: nixpkgs=channel:nixos-unstable
       - uses: cachix/cachix-action@0fc020193b5a1fa3ac4575aa3a7d3aa6a35435ad # v16
         with:
-          name: ghostty
+          name: remorses-ghostty
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
 
       - name: Test Build
@@ -176,7 +176,7 @@ jobs:
           nix_path: nixpkgs=channel:nixos-unstable
       - uses: cachix/cachix-action@0fc020193b5a1fa3ac4575aa3a7d3aa6a35435ad # v16
         with:
-          name: ghostty
+          name: remorses-ghostty
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
 
       - name: Build Libghostty
@@ -209,7 +209,7 @@ jobs:
           nix_path: nixpkgs=channel:nixos-unstable
       - uses: cachix/cachix-action@0fc020193b5a1fa3ac4575aa3a7d3aa6a35435ad # v16
         with:
-          name: ghostty
+          name: remorses-ghostty
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
 
       - name: Test release NixOS package build
@@ -255,7 +255,7 @@ jobs:
           nix_path: nixpkgs=channel:nixos-unstable
       - uses: cachix/cachix-action@0fc020193b5a1fa3ac4575aa3a7d3aa6a35435ad # v16
         with:
-          name: ghostty
+          name: remorses-ghostty
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
 
       - name: Build and Check Source Tarball
@@ -303,7 +303,7 @@ jobs:
           determinate: true
       - uses: cachix/cachix-action@0fc020193b5a1fa3ac4575aa3a7d3aa6a35435ad # v16
         with:
-          name: ghostty
+          name: remorses-ghostty
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
 
       - name: Xcode Select
@@ -346,7 +346,7 @@ jobs:
           determinate: true
       - uses: cachix/cachix-action@0fc020193b5a1fa3ac4575aa3a7d3aa6a35435ad # v16
         with:
-          name: ghostty
+          name: remorses-ghostty
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
 
       - name: Xcode Select
@@ -467,7 +467,7 @@ jobs:
           nix_path: nixpkgs=channel:nixos-unstable
       - uses: cachix/cachix-action@0fc020193b5a1fa3ac4575aa3a7d3aa6a35435ad # v16
         with:
-          name: ghostty
+          name: remorses-ghostty
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
 
       - name: test
@@ -509,7 +509,7 @@ jobs:
           nix_path: nixpkgs=channel:nixos-unstable
       - uses: cachix/cachix-action@0fc020193b5a1fa3ac4575aa3a7d3aa6a35435ad # v16
         with:
-          name: ghostty
+          name: remorses-ghostty
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
 
       - name: Test
@@ -557,7 +557,7 @@ jobs:
           nix_path: nixpkgs=channel:nixos-unstable
       - uses: cachix/cachix-action@0fc020193b5a1fa3ac4575aa3a7d3aa6a35435ad # v16
         with:
-          name: ghostty
+          name: remorses-ghostty
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
 
       - name: Test Sentry Build
@@ -577,7 +577,7 @@ jobs:
           determinate: true
       - uses: cachix/cachix-action@0fc020193b5a1fa3ac4575aa3a7d3aa6a35435ad # v16
         with:
-          name: ghostty
+          name: remorses-ghostty
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
 
       - name: Xcode Select
@@ -613,7 +613,7 @@ jobs:
           nix_path: nixpkgs=channel:nixos-unstable
       - uses: cachix/cachix-action@0fc020193b5a1fa3ac4575aa3a7d3aa6a35435ad # v16
         with:
-          name: ghostty
+          name: remorses-ghostty
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
           skipPush: true
           useDaemon: false # sometimes fails on short jobs
@@ -641,7 +641,7 @@ jobs:
           nix_path: nixpkgs=channel:nixos-unstable
       - uses: cachix/cachix-action@0fc020193b5a1fa3ac4575aa3a7d3aa6a35435ad # v16
         with:
-          name: ghostty
+          name: remorses-ghostty
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
           skipPush: true
           useDaemon: false # sometimes fails on short jobs
@@ -668,7 +668,7 @@ jobs:
           nix_path: nixpkgs=channel:nixos-unstable
       - uses: cachix/cachix-action@0fc020193b5a1fa3ac4575aa3a7d3aa6a35435ad # v16
         with:
-          name: ghostty
+          name: remorses-ghostty
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
           skipPush: true
           useDaemon: false # sometimes fails on short jobs
@@ -695,7 +695,7 @@ jobs:
           nix_path: nixpkgs=channel:nixos-unstable
       - uses: cachix/cachix-action@0fc020193b5a1fa3ac4575aa3a7d3aa6a35435ad # v16
         with:
-          name: ghostty
+          name: remorses-ghostty
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
           skipPush: true
           useDaemon: false # sometimes fails on short jobs
@@ -722,7 +722,7 @@ jobs:
           nix_path: nixpkgs=channel:nixos-unstable
       - uses: cachix/cachix-action@0fc020193b5a1fa3ac4575aa3a7d3aa6a35435ad # v16
         with:
-          name: ghostty
+          name: remorses-ghostty
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
           skipPush: true
           useDaemon: false # sometimes fails on short jobs
@@ -749,7 +749,7 @@ jobs:
           nix_path: nixpkgs=channel:nixos-unstable
       - uses: cachix/cachix-action@0fc020193b5a1fa3ac4575aa3a7d3aa6a35435ad # v16
         with:
-          name: ghostty
+          name: remorses-ghostty
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
           skipPush: true
           useDaemon: false # sometimes fails on short jobs
@@ -783,7 +783,7 @@ jobs:
           nix_path: nixpkgs=channel:nixos-unstable
       - uses: cachix/cachix-action@0fc020193b5a1fa3ac4575aa3a7d3aa6a35435ad # v16
         with:
-          name: ghostty
+          name: remorses-ghostty
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
           skipPush: true
           useDaemon: false # sometimes fails on short jobs
@@ -810,7 +810,7 @@ jobs:
           nix_path: nixpkgs=channel:nixos-unstable
       - uses: cachix/cachix-action@0fc020193b5a1fa3ac4575aa3a7d3aa6a35435ad # v16
         with:
-          name: ghostty
+          name: remorses-ghostty
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
           skipPush: true
           useDaemon: false # sometimes fails on short jobs
@@ -847,7 +847,7 @@ jobs:
           nix_path: nixpkgs=channel:nixos-unstable
       - uses: cachix/cachix-action@0fc020193b5a1fa3ac4575aa3a7d3aa6a35435ad # v16
         with:
-          name: ghostty
+          name: remorses-ghostty
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
 
       - name: Test ${{ matrix.pkg }} Build
@@ -934,7 +934,7 @@ jobs:
           nix_path: nixpkgs=channel:nixos-unstable
       - uses: cachix/cachix-action@0fc020193b5a1fa3ac4575aa3a7d3aa6a35435ad # v16
         with:
-          name: ghostty
+          name: remorses-ghostty
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
 
       - name: valgrind deps
