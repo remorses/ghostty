@@ -445,7 +445,7 @@ jobs:
         run: Get-Content -Path ".\build.log"
 
   test:
-    if: github.repository == 'ghostty-org/ghostty'
+    if: github.repository == 'remorses/ghostty'
     runs-on: ubuntu-latest
     env:
       ZIG_LOCAL_CACHE_DIR: /zig/local-cache
@@ -594,7 +594,7 @@ jobs:
         run: nix develop -c zig build test --system ${{ steps.deps.outputs.deps }}
 
   zig-fmt:
-    if: github.repository == 'ghostty-org/ghostty'
+    if: github.repository == 'remorses/ghostty'
     runs-on: ubuntu-latest
     timeout-minutes: 60
     env:
@@ -622,7 +622,7 @@ jobs:
 
   pinact:
     name: "GitHub Actions Pins"
-    if: github.repository == 'ghostty-org/ghostty'
+    if: github.repository == 'remorses/ghostty'
     runs-on: ubuntu-latest
     timeout-minutes: 60
     env:
@@ -649,7 +649,7 @@ jobs:
         run: nix develop -c pinact run --check
 
   prettier:
-    if: github.repository == 'ghostty-org/ghostty'
+    if: github.repository == 'remorses/ghostty'
     runs-on: ubuntu-latest
     timeout-minutes: 60
     env:
@@ -676,7 +676,7 @@ jobs:
         run: nix develop -c prettier --check .
 
   alejandra:
-    if: github.repository == 'ghostty-org/ghostty'
+    if: github.repository == 'remorses/ghostty'
     runs-on: ubuntu-latest
     timeout-minutes: 60
     env:
@@ -703,7 +703,7 @@ jobs:
         run: nix develop -c alejandra --check .
 
   typos:
-    if: github.repository == 'ghostty-org/ghostty'
+    if: github.repository == 'remorses/ghostty'
     runs-on: ubuntu-latest
     timeout-minutes: 60
     env:
@@ -730,7 +730,7 @@ jobs:
         run: nix develop -c typos
 
   shellcheck:
-    if: github.repository == 'ghostty-org/ghostty'
+    if: github.repository == 'remorses/ghostty'
     runs-on: ubuntu-latest
     timeout-minutes: 60
     env:
@@ -764,7 +764,7 @@ jobs:
             $(find . \( -name "*.sh" -o -name "*.bash" \) -type f ! -path "./zig-out/*" ! -path "./macos/build/*" ! -path "./.git/*" | sort)
 
   translations:
-    if: github.repository == 'ghostty-org/ghostty'
+    if: github.repository == 'remorses/ghostty'
     runs-on: ubuntu-latest
     timeout-minutes: 60
     env:
@@ -791,7 +791,7 @@ jobs:
         run: nix develop -c .github/scripts/check-translations.sh
 
   blueprint-compiler:
-    if: github.repository == 'ghostty-org/ghostty'
+    if: github.repository == 'remorses/ghostty'
     runs-on: ubuntu-latest
     timeout-minutes: 60
     env:
@@ -884,7 +884,7 @@ jobs:
             DISTRO_VERSION=13
 
   flatpak:
-    if: github.repository == 'ghostty-org/ghostty'
+    if: github.repository == 'remorses/ghostty'
     name: "Flatpak"
     container:
       image: ghcr.io/flathub-infra/flatpak-github-actions:gnome-47
@@ -910,7 +910,7 @@ jobs:
           verbose: true
 
   valgrind:
-    if: github.repository == 'ghostty-org/ghostty'
+    if: github.repository == 'remorses/ghostty'
     runs-on: ubuntu-latest
     timeout-minutes: 30
     needs: test
